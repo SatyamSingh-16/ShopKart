@@ -1,0 +1,21 @@
+{
+  "name": "shopkart-api",
+  "version": "1.0.0",
+  "description": "ShopKart Labs 01-06 final backend",
+  "author": "Satyam Singh",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=.env index.js",
+    "dev": "node --watch --env-file=.env index.js",
+    "seed": "node --env-file=.env seedProducts.js",
+    "check": "node --check index.js && node --check controllers/customer.controller.js && node --check controllers/product.controller.js && node --check controllers/wishlist.controller.js && node --check controllers/cart.controller.js && node --check controllers/order.controller.js"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.0",
+    "razorpay": "^2.9.8"
+  }
+}
